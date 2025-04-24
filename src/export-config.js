@@ -2,8 +2,8 @@ module.exports = {
     excluded: ["electron.ts"],
     included: [],
     build: {
-        name: "Sample Web Browser Module",
-        id: "developer.Sample_Web_Module",
+        name: "Gmail",
+        id: "aarontburn.Google_Gmail",
         process: "./process/main.js",
         replace: [
             {
