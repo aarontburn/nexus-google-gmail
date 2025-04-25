@@ -18,7 +18,7 @@ export default class SampleProcess extends Process {
             moduleName: MODULE_NAME,
             paths: {
                 iconPath: ICON_PATH,
-                urlPath: "https://workspace.google.com/intl/en-US/gmail/"
+                urlPath: "https://mail.google.com/mail/"
             },
             httpOptions: {
                 userAgent: session
