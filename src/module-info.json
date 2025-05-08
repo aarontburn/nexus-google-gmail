@@ -1,9 +1,34 @@
 {
-    "name": "{EXPORTED_MODULE_NAME}",
-    "author": "aarontburn",
+    "name": "Gmail",
+    "id": "aarontburn.Google_Gmail",
     "version": "1.0.0",
+    "author": "aarontburn",
     "description": "A Gmail module for Nexus.",
-    "build_version": 1,
     "platforms": [],
-    "link": "https://github.com/aarontburn/nexus-google-gmail"
+    "link": "https://github.com/aarontburn/nexus-google-gmail",
+    "build": {
+        "build-version": 1,
+        "excluded": [
+            "electron.ts"
+        ],
+        "included": [],
+        "process": "./process/main.js",
+        "replace": [
+            {
+                "from": "{EXPORTED_MODULE_ID}",
+                "to": "%id%",
+                "at": [
+                    "./process/main.ts"
+                ]
+            },
+            {
+                "from": "{EXPORTED_MODULE_NAME}",
+                "to": "%name%",
+                "at": [
+                    "./process/main.ts",
+                    "./module-info.json"
+                ]
+            }
+        ]
+    }
 }
